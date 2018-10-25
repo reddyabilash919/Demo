@@ -1,0 +1,128 @@
+<!DOCTYPE HTML >
+<html>
+<head>
+	<link rel="stylesheet" href="css/responsiveslides.css">
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+		<script src="./responsiveslides.min.js"></script>
+		  <script>
+		    // You can also use "$(window).load(function() {"
+			    $(function () {
+			
+			      // Slideshow 1
+			      $("#slider1").responsiveSlides({
+			        maxwidth: 16000,
+			        speed: 200
+			      });
+			});
+		  </script>
+	<title> LoginPage </title>
+	<style>
+	body {
+		background-color:#b3b3b3;
+	}
+	h1.welcome {
+		background-color:#8b8682; 
+		color: #7ec0ee;
+		border: solid black;
+        border-radius: 15px;
+        margin: 0;
+        padding: 10px 0;
+	}
+	#pwd{
+		padding-left: 3px;
+	}
+	.button{
+		position: relative;
+        left: 73px;
+	}
+	input 
+	{
+     background-color:#dbdbdb;
+	}
+	h3
+	{
+	color: black ;
+	}
+	h2
+	{
+	color: black ;
+	padding-top: 0px;
+	}
+   #log
+	{
+      color:black;
+      padding-left: 120px;
+	}
+
+	.header-top-nav ul li a{
+	background-color:#8b8682; 
+		color: black;
+	font-family: "Times New Roman", Times, serif;
+	font-size: 1.3em;
+	font-weight: 400;
+	text-transform: uppercase;
+	display: inline-block;
+	padding: 0px 80.5px;
+	transition: 1s ease;
+	-o-transition: 0.5s ease;
+	-webkit-transition: 0.5s ease;
+}
+ul
+{
+		list-style-type: none;
+		overflow:hidden;
+
+}
+li{
+display:inline-block;
+}
+.header-top-nav li.active> a, .header-top-nav li> a:hover {
+	color: #ff9900;
+	background: #454545;
+}
+.header-top-nav{
+	background: url(../images/top-nav-bg.png) repeat-x;
+}
+#forgot
+{
+	padding-left: 93px;
+}
+#add { 
+	display:inline;
+}
+</style>
+</head>
+<body>
+	<h1 class="welcome" ><center>Welcome to Opal Technology Solutions</center></h1>
+	<div class="header">
+    <div class="wrap">
+    <div class="login">
+	<h3 id="log"> LOGIN </h3>
+	<span id="user">Username: <input type="text"></span> 
+	<p id="pwd"> Password: <input type="password"></p>
+	<p><button type="submit" class="button">Login</button><a id="forgot" href="website">Forgot password? </a></p>
+</div>
+    <div class="header-top-nav">
+    <div class="wrap">
+	<ul>
+		<li id="home"><a href="www.facebook.com"> HOME </a></li>
+		<li id="about"><a href="somefile">ABOUT </a> </li>
+		<li id="services"><a href="somefile"> SERVICES </a> </li>
+		<li id="contact"> <a href="sales">CONTACT </a> </li>
+		<li id="employees"><a href="achive">PRODUCTS </a></li>
+	</ul>
+    </div>
+    </div>
+    </div>
+    <div class="clear"> </div>
+    <div class="image-slider">
+						<!-- Slideshow 1 -->
+	<ul class="rslides" id="slider1">
+    <li><img src="./a.jpg" alt="" ></li>
+	<li><img src="./d.jpg" alt=""  ></li>
+	<li><img src="./c.jpg" alt="" ></li>
+	 </ul>
+	</div>
+	<h2 class="opal"><center>OPAL creative minds</center></h2>
+</body>
+</html>	
